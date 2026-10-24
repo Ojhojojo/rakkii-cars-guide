@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   title: 'Rakkii Cars User Guide',
+  base: '/rakkii-cars-guide/',
   description: 'How to run the shop in Rakkii Ops: workshop, sales, finance, HR and settings.',
   lang: 'en-PH',
   cleanUrls: true,
