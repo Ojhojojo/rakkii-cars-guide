@@ -32,10 +32,22 @@ Do the intake checklist and photos as usual — the adjuster will rely on them.
 
 1. Add **Work lines** on the **Work** tab. Set **Who pays** per line (see 6.7).
 2. **Quote › Create quote** and **Print estimate** for the adjuster's inspection.
-3. Press **Waiting for LOA**. Status: **Waiting for LOA**.
+3. Press **Waiting for LOA**. Status: **Waiting for LOA**. The banner says "Mark authorized when the LOA is on file."
+
+### While you wait for the LOA
+
+On **Waiting for LOA** the job has these buttons:
+
+| Button | When to use it |
+|---|---|
+| **Mark authorized** | The LOA is saved (number and amount). Greyed out until then, with the reason "Marking authorised requires an LOA number and amount." |
+| **Start work (cash / no LOA)** | The customer will settle in cash, or the insurer confirmed another way. Asks for a reason, which is kept in the status log. |
+| **Back to quote** | The adjuster wants the estimate changed. |
+| **Put on hold** | The claim is stuck (asks for a reason). |
+| **Cancel job** | The claim was denied and the customer will not proceed. |
 
 ::: warning Do not start insurance work without an LOA
-From Booked, For canvass or Quoted the button reads **Start work (no LOA)** / **Start work (cash / no LOA)** and asks "Insurance jobs should wait for an LOA. Write why this one does not." Use it only when the customer settles in cash or the insurer has confirmed in writing another way.
+From Booked, For canvass, Quoted or Waiting for LOA the button reads **Start work (no LOA)** / **Start work (cash / no LOA)** and asks "Insurance jobs should wait for an LOA. Write why this one does not." Use it only when the customer settles in cash or the insurer has confirmed in writing another way. A missing LOA only greys out **Mark authorized**; the cash start stays available.
 :::
 
 ## 6.4 Record the LOA
@@ -59,9 +71,7 @@ When the insurer sends the LOA:
 ### Hidden damage: supplements
 If the car needs more work after tear-down, quote it, get the insurer's approval, then under **Supplements** enter the **Extra amount** and **Extra LOA number** and press **Add supplement**.
 
-::: info 📷 Screenshot placeholder
-`/screenshots/06-lane-2-insurance-claims-and-loa/01-loa-card.png` — Letter of authorization card with LOA number, date, amounts.
-:::
+![Letter of authorization card with LOA number, date, amounts](/screenshots/06-lane-2-insurance-claims-and-loa/01-loa-card.png)
 
 ## 6.5 Mark authorized to unlock repair
 
@@ -116,12 +126,12 @@ If a job is set to **Wait for the insurer**, release is blocked until the insure
 
 ## 6.10 Print the Release of Claim
 
-1. On **Pay** (or the Work tab print list) press **Release of Claim**.
-2. The paper fills in the insured, insurer, claim and policy numbers, plate, vehicle and LOA number. The wording comes from **Admin › Shop settings › Workshop rules › Insurance release of claim**.
+1. On the **Release** tab (also on **Pay** and the Work tab print list) press **Release of Claim**.
+2. The paper fills in the insured, insurer, claim and policy numbers, plate, vehicle and LOA number. The wording comes from **Admin › Shop settings › Workshop rules › Insurance release of claim**. Owners and admins print the same shop wording; if the shop has not set any, the default wording is used.
 3. Have the customer sign it; send it to the insurer with the insurer invoice.
+
+![Release tab of an insurance job with Release of Claim, Print gate pass and Print customer invoice](/screenshots/06-lane-2-insurance-claims-and-loa/03-release-tab.png)
 
 When the insurer pays, record it on the job with **Who paid**: Insurer and **Apply to invoice** = the insurer invoice. Then **Close job**.
 
-::: info 📷 Screenshot placeholder
-`/screenshots/06-lane-2-insurance-claims-and-loa/02-split-invoices.png` — Pay tab showing a posted insurer invoice and customer invoice.
-:::
+![Pay tab showing a posted insurer invoice and customer invoice](/screenshots/06-lane-2-insurance-claims-and-loa/02-split-invoices.png)

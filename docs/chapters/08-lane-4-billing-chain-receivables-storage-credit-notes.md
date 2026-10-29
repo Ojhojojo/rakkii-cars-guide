@@ -50,9 +50,7 @@ The owner sets **Flag bill not transmitted after** (2 days by default) so posted
 2. Type the **Note** ("Called Ms. Reyes, cheque ready 30 Oct"), **Save note**.
 3. The latest note and time show under **Last follow-up**.
 
-::: info 📷 Screenshot placeholder
-`/screenshots/08-lane-4-billing-chain-receivables-storage-credit-notes/01-who-owes-us.png` — Who owes us with buckets, transmittal and follow-up actions.
-:::
+![Who owes us with buckets, transmittal and follow-up actions](/screenshots/08-lane-4-billing-chain-receivables-storage-credit-notes/01-who-owes-us.png)
 
 ## 8.3 Recording partial payments
 
@@ -111,6 +109,4 @@ The invoice stays posted; the payer's balance, receivables, commission basis and
 ### Voiding an invoice
 **Void** on an invoice needs a reason and is blocked while credit notes or refunds exist: "Void the credit notes first." / "Void the refunds first."
 
-::: info 📷 Screenshot placeholder
-`/screenshots/08-lane-4-billing-chain-receivables-storage-credit-notes/02-credit-note.png` — Issue credit note dialog and the credited invoice row.
-:::
+![Issue credit note dialog and the credited invoice row](/screenshots/08-lane-4-billing-chain-receivables-storage-credit-notes/02-credit-note.png)

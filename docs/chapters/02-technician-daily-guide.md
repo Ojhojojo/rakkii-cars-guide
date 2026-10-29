@@ -27,9 +27,7 @@ If you are away from the shop (road test, towing, parts run), the app warns that
 
 At the end of the day, press **Clock out** the same way. A punch with no clock-out is not paid for that day until the desk closes it.
 
-::: info 📷 Screenshot placeholder
-`/screenshots/02-technician-daily-guide/01-clock-in.png` — Time clock with Clock in and Today's punches.
-:::
+![Time clock with Clock in and Today's punches](/screenshots/02-technician-daily-guide/01-clock-in.png)
 
 ## 2.2 Your job list: Workshop › My jobs (`/workshop`)
 
@@ -40,23 +38,35 @@ Your home page shows two lists:
 | **Assigned to me (n)** | Jobs the desk assigned to you | Open and work them |
 | **Other jobs (n)** | Other open bay jobs, unassigned first, with the technician names | Open to **view only** |
 
-At the top, **Assigned to you** shows new assignments this week, who assigned them and when. Announcements the owner posts also appear here while they are active.
+At the top, **Assigned to you** shows new assignments this week, who assigned them and when. Announcements the owner posts also appear here while they are active. Cards with nothing in them are hidden, so the page only shows what needs you. Each job shows its status and how many checklist steps are still open (for example **0 open**).
 
 - If you open a job that is not yours and try to change it, the app says **"This job isn't assigned to you."** Ask the desk to assign you.
 - Jobs are reassigned by the owner (for example when you go on leave). The job keeps an **Assignment history**.
 
-::: info 📷 Screenshot placeholder
-`/screenshots/02-technician-daily-guide/02-my-jobs.png` — My jobs with "Assigned to me" and "Other jobs".
-:::
+![My jobs with "Assigned to me" and "Other jobs"](/screenshots/02-technician-daily-guide/02-my-jobs.png)
 
 ## 2.3 Starting bay work
 
-1. Tap the plate under **Assigned to me**. The job opens on the **Work** tab.
+1. Tap the plate under **Assigned to me**. The job opens on the **Work** tab, with only two tabs for you: **Work** and **Files**.
 2. Read the **Job order**: plate, customer, reference, status, technicians and the work lines (what to do, how many). Prices are not shown to you.
 3. Read **Notes** for the desk's instructions.
 4. Use **Add photo** / **Bay photo** for progress pictures as you go.
 
 The desk moves the job to **Under repair** when work can start (after the quote, deposit or LOA is in place). You can see the current status at the top of the job.
+
+### Your next-step banner
+Under the plate a blue banner tells you what to do now:
+
+| Status | Banner |
+|---|---|
+| Under repair, checklist steps open | "Finish the bay checklist (1 step left), then send to QC." |
+| Under repair, checklist done | "Send the car to QC when the work is done." |
+| Quality check, photos missing | "Take the missing QC photos (Front, Rear, Left side (LS), Right side (RS)). 0 of 4 done." |
+| Quality check, photos done | "QC photos are done. The desk marks the car ready for pickup." |
+| Waiting for parts | "Mark parts in when they arrive." |
+| On hold | "On hold. Check with the desk before resuming work." |
+
+![Technician view of a job: Work and Files tabs, next-step banner and Send to QC](/screenshots/02-technician-daily-guide/05-tech-job.png)
 
 ### Your status buttons
 A technician has only these moves. Everything else (start work, ready for pickup, release) belongs to the desk.
@@ -77,15 +87,13 @@ Each job can carry a **Bay checklist** (usually applied by the desk from a templ
 
 1. In **Work › Bay checklist**, tick each step when it is really done. The app records **Done by** your name and the time.
 2. If a step is missing, type it in **New step** and press **Add step**.
-3. The job header shows progress (for example "3 open · 5 / 8 done", then "All done").
+3. The job header shows progress (for example "3 open · 5 / 8 done", then "All done (8/8)").
 
 ::: warning Open steps follow the car
 The Shop board and Dashboard flag jobs in Under repair or Quality check that still have open checklist steps. Finish or remove steps before you send the car to QC.
 :::
 
-::: info 📷 Screenshot placeholder
-`/screenshots/02-technician-daily-guide/03-bay-checklist.png` — Bay checklist with ticked and open steps.
-:::
+![Bay checklist with ticked and open steps](/screenshots/02-technician-daily-guide/03-bay-checklist.png)
 
 ## 2.5 Putting a job on hold
 
@@ -139,24 +147,23 @@ Statuses: **To pay → Paid → Funds released → Arrived**.
 
 A car cannot move to **Ready for pickup** or be **Released** until it has the required QC photos (4 by default). The photo card ("Required before release. Angles: front, rear, left (LS), right (RS).") is on the **Work** and **Files** tabs.
 
-1. Finish the repair and clean-up.
-2. Under **QC photos**, upload one photo for each angle:
+1. Finish the repair, tick the last checklist step and clean up.
+2. Press **Send to QC**. Status: **Quality check**. The QC photos card moves to the top of the Work tab.
+3. Under **QC photos**, upload one photo for each angle with **Choose file** or **Take photo**:
    - **Front**
    - **Rear**
    - **Left side (LS)**
    - **Right side (RS)**
-3. The counter shows progress, for example **QC photos: 3/4**, and names the missing angle.
-4. When all four are in, press **Send to QC** (or tell the desk the car is ready).
+4. The counter shows progress (for example **3/4**) and the banner names the missing angles. Each uploaded photo is listed under the slots (for example "Front · front.jpg"); tap it to open it, or **Clear** to replace it.
+5. When all four are in, the banner says "QC photos are done. The desk marks the car ready for pickup." You are done; the desk marks the car ready.
 
 Only the owner (or admin) can skip photos, with a written **QC override reason**.
 
-::: info 📷 Screenshot placeholder
-`/screenshots/02-technician-daily-guide/04-qc-photos.png` — QC photos card with Front, Rear, Left side (LS), Right side (RS) slots.
-:::
+![QC photos card with Front, Rear, Left side (LS), Right side (RS) slots](/screenshots/02-technician-daily-guide/04-qc-photos.png)
 
 ## 2.9 Checking the calendar and forms
 
-**Workshop › Calendar (`/workshop/calendar`)** shows promised dates by day. Pick a **Day** to see which cars are due, and **No date yet** for open jobs without a promised date. Use it to plan your bay order.
+**Workshop › Calendar (`/workshop/calendar`)** shows target dates and appointments by day. Pick a **Day** to see which cars are due, and **No target date or appointment** for open jobs with neither. Use it to plan your bay order.
 
 **Workshop › Forms (`/workshop/forms`)** has the printable shop forms:
 - **Vehicle Pick-up & Delivery Waiver** — when you pick up or deliver a customer car outside the shop.

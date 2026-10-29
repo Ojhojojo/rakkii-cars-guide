@@ -48,7 +48,7 @@ npm run docs:preview  # serve the built site locally
 
 ## Screenshots
 
-Chapters contain screenshot **placeholders** pointing at `/screenshots/<chapter>/<step>.png`. The full checklist and capture rules are in [`docs/public/screenshots/README.md`](docs/public/screenshots/README.md). Use demo data only.
+Chapters show light-mode screenshots of the integration app from `docs/public/screenshots/<chapter>/`. The checklist and capture rules are in [`docs/public/screenshots/README.md`](docs/public/screenshots/README.md). Use integration test data only.
 
 ## Contributing
 

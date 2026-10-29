@@ -33,6 +33,7 @@ features:
 - **Find your role** in the cards above, or read [Chapter 1](/chapters/01-welcome-and-navigation) for the role table and how the six hubs work.
 - **Follow the workflow, not the screen layout.** Steps name the hub, page, tab, status and the required field. Those stay the same when the look of the app changes.
 - **Search** with the box at the top (press <kbd>/</kbd> or <kbd>Ctrl</kbd>+<kbd>K</kbd>).
+- **What changed?** See [What's new](/whats-new), including a one-job walkthrough from intake to release.
 - **Live int environment** for practice: Ops App `https://rakkii-ops-int.web.app`, Customer Portal `https://rakkii-web-int.web.app`.
 
 ## Job status at a glance

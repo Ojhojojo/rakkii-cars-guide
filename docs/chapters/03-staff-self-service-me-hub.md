@@ -45,7 +45,7 @@ Overtime is paid only after it is approved, and never for more hours than you ac
 3. Enter the **Date**, **Hours** and a **Reason** (for example "Finished paint booth for promised release").
 4. Press **File request**.
 
-Your requests appear under **My overtime** with their **Source**, **Hours** and **Status** (Pending, Approved, Rejected). Time past your shift end can also appear automatically for approval. The owner may approve fewer hours than you claimed and add a note.
+The page opens on **My week** (Monday to Sunday) with your punches for the week. Your requests appear under **My overtime** with their **Source**, **Hours** and **Status** (Pending, Approved, Rejected). Time past your shift end can also appear automatically for approval. The owner may approve fewer hours than you claimed and add a note.
 
 ## 3.3 Requesting leave (`/me/leave`)
 
@@ -57,15 +57,13 @@ The top of the page shows your balances for the year: **Vacation remaining**, **
 4. For a half day, set **Half day** to **Morning (AM)** or **Afternoon (PM)** (one date only). Otherwise leave it at **Full day**.
 5. Add a **Note** if useful, then press **Request**.
 
-Your request is listed under **My requests** with its status. You can **Cancel** a request that has not been decided.
+Your request is listed under **My requests** with its dates (for example "Nov 10, 2026"), type, days and status, and the balance tiles show it as **Pending**. You can **Cancel** a request that has not been decided. When the owner approves it, the status changes to **approved** and the days come off **Vacation remaining**.
 
 ::: warning Open jobs and leave
 If you have open assigned jobs, the owner sees them when approving your leave and can move them to another technician. Tell the desk about cars that are due during your leave.
 :::
 
-::: info 📷 Screenshot placeholder
-`/screenshots/03-staff-self-service-me-hub/01-request-leave.png` — Request leave dialog with Type, dates and Half day.
-:::
+![Request leave dialog with Type, dates and Half day](/screenshots/03-staff-self-service-me-hub/01-request-leave.png)
 
 ## 3.4 Viewing payslips (`/me/payslip`)
 
@@ -87,6 +85,4 @@ Your own employee record, read-only.
 - **Leave** — your balances and this year's requests.
 - **Scorecards** — your KPI scorecards **once they are finalized**. Draft scorecards stay hidden until the owner presses **Finalise**. Each card shows the period, each KPI score with its rating and comment, and the overall result.
 
-::: info 📷 Screenshot placeholder
-`/screenshots/03-staff-self-service-me-hub/02-my-profile-scorecards.png` — My profile, Scorecards section with a finalized card.
-:::
+![My profile, Scorecards section with a finalized card](/screenshots/03-staff-self-service-me-hub/02-my-profile-scorecards.png)

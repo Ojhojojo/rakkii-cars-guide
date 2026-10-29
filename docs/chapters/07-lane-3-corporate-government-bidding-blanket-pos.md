@@ -48,9 +48,7 @@ The job header shows a chip "Blanket PO *number* · remaining ₱…".
 
 On the list page, the **Open** and **History** views, filters by **Status** and **Party kind**, **Export CSV** and **Print** help you report to the customer.
 
-::: info 📷 Screenshot placeholder
-`/screenshots/07-lane-3-corporate-government-bidding-blanket-pos/01-blanket-po-detail.png` — Blanket PO detail with remaining amount, linked vehicles and model caps.
-:::
+![Blanket PO detail with remaining amount, linked vehicles and model caps](/screenshots/07-lane-3-corporate-government-bidding-blanket-pos/01-blanket-po-detail.png)
 
 ## 7.3 Create the job
 

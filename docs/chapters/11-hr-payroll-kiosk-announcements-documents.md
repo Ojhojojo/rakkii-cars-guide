@@ -14,7 +14,7 @@
 
 ## 11.1 Employee Directory (`/hr/employee-directory`)
 
-The list shows **Name**, **Position**, **Role**, **Status**, **Mobile**, **Hire date**. **Search name or mobile**, tick **Include inactive** to see former staff. The **Setup to finish** strip lists records missing something important (for example no pay rate) with a **Fix** link.
+The subtitle counts active staff (for example "4 active"; it reads "Loading…" while the list loads). The list shows **Name**, **Position**, **Role**, **Status**, **Mobile**, **Hire date**. **Search name or mobile**, tick **Include inactive** to see former staff. The **Setup to finish** strip lists records missing something important (for example no pay rate) with a **Fix** link.
 
 ### Add a person
 1. **Add person**.
@@ -44,10 +44,15 @@ The list shows **Name**, **Position**, **Role**, **Status**, **Mobile**, **Hire 
 1. On the shop tablet, sign in as owner and open **HR › Clock kiosk**.
 2. The **Desk kiosk** lists everyone set to **Must clock**.
 3. Staff tap their own name: "Clocked out — tap to clock in" / "Clocked in — tap to clock out".
+4. The kiosk asks to confirm ("Clock in Int QA Tech? … will be clocked in for today (Oct 29, 2026).") and then shows "Clocked in." The punch appears at once in **HR › Attendance** and on that person's **Me › Time clock**.
+
+![Clock kiosk with one technician clocked in](/screenshots/11-hr-payroll-kiosk-announcements-documents/02-clock-kiosk.png)
 
 The kiosk does not check location. Phone clock-ins (Me › Time clock) do. Clock-in rules (map pin, allowed radius, photo, off-site punch with approval) are in **Admin › Shop settings › Staff & time**.
 
 ## 11.3 Attendance: off-site punches and overtime (`/hr/attendance`)
+
+The page opens on **This week** (Monday to Sunday, the same week Payroll uses). Use the arrows to move a week, **This week** to come back, or **Custom range**.
 
 ### Register
 Every punch: **Name**, **Branch**, **In** (with **In photo**), **Out** (with **Out photo**), **Hours**, **Status**. Filter **All / Pending / Approved / Rejected** and by **Staff**. **Download CSV** from the menu.
@@ -69,11 +74,13 @@ Top tiles: **Vacation remaining**, **Sick remaining**, **Unpaid taken**, **SIL r
 
 ### Decide a request
 1. Under **Needs a decision**, review staff, dates (half days show AM/PM), type, days and note.
-2. Press **Approve**. If the person has open jobs, the **Approve leave** dialog lists each job (plate, reference, promised date, who else is on it). For each choose **Reassign to…** a colleague or **Keep**. Then **Approve leave** (or **Not yet**).
+2. Press **Approve**. If the person has open jobs, the **Approve leave** dialog says how many ("Int QA Tech has 3 open job(s). Move any of them, or keep them as they are.") and lists each job (plate, reference, who else is on it). For each choose **Reassign to…** a colleague or leave it as it is. Then **Approve leave** (or **Not yet**). Released and closed jobs are not listed.
 3. Or press **Reject**. A decided request can still be cancelled with a reason.
 
 ### Set allotments
-Menu **Set days** → **Set allotment**: **Person**, **Year**, **Type** (Vacation, Sick, Service incentive (SIL)), **Days** → **Save allotment**. **Team balances** shows left / allotted for everyone.
+Menu **Set days** → **Set allotment**: **Person**, **Year**, **Type** (Vacation, Sick, Service incentive (SIL)), **Days** → **Save allotment**. **Team balances** shows days left / allotted for everyone (Unpaid shows days taken).
+
+![Leave approvals with Needs a decision, Team balances and History](/screenshots/11-hr-payroll-kiosk-announcements-documents/03-leave-approvals.png)
 
 **Add leave** records leave on someone's behalf (for example a phoned-in sick day).
 
@@ -82,7 +89,7 @@ Menu **Set days** → **Set allotment**: **Person**, **Year**, **Type** (Vacatio
 Payroll is computed from closed punches and dated pay rates. Payout happens outside the app.
 
 ### Run a period
-1. Choose the period. The register previews each person: **Basis**, **Rate**, **Regular hours**, **OT hours**, **OT pay**, **Days paid**, **Holiday pay**, **Rest day**, **Night diff (NSD)**, **Premium pay**, **COLA / allowances**, **Loans / CA**, **Amount**, **Deductions**, **Net**.
+1. Choose the period. It opens on **This week** (Monday to Sunday, like Attendance); use **Custom range** for a semi-monthly or monthly run. The register previews each person: **Basis**, **Rate**, **Regular hours**, **OT hours**, **OT pay**, **Days paid**, **Holiday pay**, **Rest day**, **Night diff (NSD)**, **Premium pay**, **COLA / allowances**, **Loans / CA**, **Amount**, **Deductions**, **Net**.
 2. Read the warnings: open clock-ins (not paid until closed — **Review in Attendance**), pending OT, unpaid bonuses, staff without a pay rate.
 3. Statutory deductions: choose **Semi-monthly (½)** or **Full month**, press **Suggest** (per row) or **Suggest all** for SSS, PhilHealth, Pag-IBIG and WHT, check them, edit **Other**, then **Save** / **Save all**.
 4. Use the row menu for adjustments — each needs a **Reason** and is logged:
@@ -99,9 +106,7 @@ Payroll is computed from closed punches and dated pay rates. Payout happens outs
 ### 13th-month calculator
 Pick the **Calendar year** and **Run**. Each row shows **Basic auto**, an optional **Override** of basic earned, **Basic used** and **13th month** (basic earned ÷ 12). **Save override**, **Export CSV**, **Print summary**. It is an estimate for the owner to verify, not a BIR filing.
 
-::: info 📷 Screenshot placeholder
-`/screenshots/11-hr-payroll-kiosk-announcements-documents/01-payroll-register.png` — Payroll register with Lock period and the Day pay override dialog.
-:::
+![Payroll register with Lock period and the Day pay override dialog](/screenshots/11-hr-payroll-kiosk-announcements-documents/01-payroll-register.png)
 
 ## 11.6 Announcements (`/hr/announcements`)
 
