@@ -21,28 +21,44 @@ The Kanban view of every car in play. Each card shows the plate, a subtitle (typ
 - Scope: **Mine**, **All open**, **All**.
 - Type: **Retail**, **Insurance**, **Fleet**.
 - **Lane** (or **All lanes**).
-- **Promised**: **Any date**, **Due today**, **Overdue**.
+- **Target date**: **Any date**, **Due today**, **Overdue**.
 - **Stuck**: **Any**, **Waiting LOA**, **Waiting parts**, **Unpaid**.
 - **Work category**.
 
-Switch between **Columns** (Kanban) and **List** (sortable table: Plate, Customer, Lane, Status, Type, Category, Promised, Balance). Jobs that match a search but are off the board (released, closed) show under **Also found (off the board)**.
+Switch between **Columns** (Kanban) and **List** (sortable table: Plate, Customer, Lane, Status, Type, Category, Target date, Balance). Jobs that match a search but are off the board (released, closed) show under **Also found (off the board)**.
 
-**Morning routine:** filter **Promised: Due today** and **Overdue**, then **Stuck: Unpaid** on the Ready lane — those cars must not leave until paid.
+**Morning routine:** filter **Target date: Due today** and **Overdue**, then **Stuck: Unpaid** on the Ready lane — those cars must not leave until paid.
 
-The **Dashboard** (`/workshop`) complements the board with **Due today**, **New web & Messenger inquiries** (with **Confirm booking**), **Ready, but customer still owes**, **Today's appointments** (Confirmed / In shop / Waiting), **Announcements**, and counts by status, type and channel.
+The **Dashboard** (`/workshop`) complements the board with **Priority jobs**, **Announcements**, **Today's appointments** (Confirmed / In shop / Waiting), **Due today**, **New web & Messenger inquiries** (with **Confirm booking**), **Ready, but customer still owes**, tiles (**Cars in shop**, **On hold**, **Due today**, **Cash in today**, **Overdue invoices**) and counts by status, type and channel.
 
-::: info 📷 Screenshot placeholder
-`/screenshots/10-workshop-operations-board-calendar-backjobs-contractors/01-shop-board.png` — Shop board columns view with filters.
-:::
+### Priority jobs
+The owner ranks the jobs the shop must finish first. On the Dashboard, **Priority jobs** lists them in order; under **Suggested** the app proposes overdue jobs (plate and target date), and **Add** puts one on the list. You can also make a job a priority from the job itself with **Make priority** and add a short note. Technicians see their priority jobs ranked on **My jobs**.
 
-## 10.2 Appointment & promised-date calendar (`/workshop/calendar`)
+### Find a job fast
+The search box in the top bar (**Plate, job or customer**, shortcut <kbd>/</kbd>) finds any job by plate, job reference or customer name, including released and closed ones.
+
+### Customer activity
+**Workshop › Customer activity** lists what customers did on the website, pay link or portal: web bookings, quote requests, estimates approved or declined, extras approved, payment screenshots and payment notes. The bell in the top bar shows how many are unseen; once anyone at the desk marks an item seen, it leaves the count for everyone. Open an item to go to the job.
+
+![Owner Dashboard with Priority jobs suggestions, Announcements and today's tiles](/screenshots/10-workshop-operations-board-calendar-backjobs-contractors/03-dashboard.png)
+
+![Shop board columns view with filters](/screenshots/10-workshop-operations-board-calendar-backjobs-contractors/01-shop-board.png)
+
+## 10.2 Appointment & target-date calendar (`/workshop/calendar`)
+
+A job has two separate dates:
+
+- **Target date** — when the repair should be done.
+- **Appointment** — when the car is booked to come in (with a time window and a status).
 
 1. Open **Workshop › Calendar**. The week is shown; pick a **Day**.
-2. The selected day lists every job **promised** for that day (plate, customer, type and status).
-3. **No date yet** lists open jobs without a promised date — give each one a date.
-4. **Book this day** starts a new job with that promised date.
+2. The selected day lists every job with a target date or an appointment on that day (plate, customer, type and status). A tag says which: **Appointment** or **Target date**.
+3. **No target date or appointment** lists open jobs with neither — give each one a date.
+4. **Book this day** starts a new job with that date.
 
-**Setting the date and appointment on a job:** job **Overview** → **Promised** line → set **Date**, **Time window** and appointment **Status** (**Confirmed**, **In shop**, **Waiting**) → **Save**. **Clear chip** removes the appointment.
+**Setting the dates on a job:** job **Overview** →
+- **Target date** → pick the date → **Save target date**.
+- **Appointment** → **Appointment date**, **Time window** and **Status** (**Confirmed**, **In shop**, **Waiting**) → **Save appointment**. **Clear appointment** removes it.
 
 ## 10.3 Customers & vehicle service history
 
@@ -97,6 +113,4 @@ Statuses: **OPEN**, **ON-GOING**, **COMPLETED**, **CANCELLED**. Technicians see 
 - Columns: **Job**, **Plate**, **Contractor**, **Scope**, **Status**, **Commitment date**, **Days**, **Labour**, **Adv. paid**, **Balance**.
 - Badges: **Overdue**, **Due today**, **Soon** (warning days set in **Shop settings › Workshop rules › Contractors**).
 
-::: info 📷 Screenshot placeholder
-`/screenshots/10-workshop-operations-board-calendar-backjobs-contractors/02-contractor-monitor.png` — Contractor jobs monitor with overdue filter.
-:::
+![Contractor jobs monitor with overdue filter](/screenshots/10-workshop-operations-board-calendar-backjobs-contractors/02-contractor-monitor.png)

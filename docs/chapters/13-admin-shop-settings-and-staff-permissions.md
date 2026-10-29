@@ -40,7 +40,7 @@ Pick a section on the left. Each card shows the current values; press **Edit** o
 ### Sales & commission
 | Card | Settings (defaults) |
 |---|---|
-| **Minimum gross margin** | **Minimum gross margin** (30%), **When a job is below the minimum**: **Warn** or **Block** |
+| **Minimum gross margin** | **Minimum gross margin** (30%, counted on cost: (sell − cost) ÷ cost), **When a job is below the minimum**: **Warn** or **Block** |
 | **Sales performer** | **Performer at or above quota** (100%) |
 | **Sales figures** | **Leave these statuses out of sales figures** (Cancelled, No-show) |
 | **Agent commission** | **Agent commission on**, **Agent rate** (5%), **Agent is a fixed peso amount**, **Due days after release** (30), **Basis**: **Customer paid**, **Approved amount** or **Net of cost** |
@@ -61,9 +61,7 @@ Pick a section on the left. Each card shows the current values; press **Edit** o
 ### Advanced (one-time setup)
 **Invoice numbering** (**VAT invoice prefix**, **Non-VAT invoice prefix**), **Payment account mapping** (which money account receives Cash, GCash, Maya, Bank and Card payments), and **Demo branch** (**Enable demo branch** for test bookings and onboarding at `/b/demo`, kept apart from live data).
 
-::: info 📷 Screenshot placeholder
-`/screenshots/13-admin-shop-settings-and-staff-permissions/01-shop-settings.png` — Shop settings, Getting paid section with Down payments and holds card.
-:::
+![Shop settings, Getting paid section with Down payments and holds card](/screenshots/13-admin-shop-settings-and-staff-permissions/01-shop-settings.png)
 
 ## 13.3 Company area (HQ owner)
 

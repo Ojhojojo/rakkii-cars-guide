@@ -43,9 +43,7 @@ Each row shows **Job**, **Customer**, **Car**, **Sales advisor**, **Status**, **
 Open **Follow-up due** every morning. Overdue follow-ups are highlighted.
 :::
 
-::: info 📷 Screenshot placeholder
-`/screenshots/04-sales-agent-guide/01-pipeline.png` — My pipeline with status chips and Follow-up due filter.
-:::
+![My pipeline with status chips and Follow-up due filter](/screenshots/04-sales-agent-guide/01-pipeline.png)
 
 ## 4.3 Sales Monitoring and spreadsheet import (`/sales/monitoring`)
 
@@ -115,6 +113,4 @@ A staff-only tool to give a customer a quick motor insurance premium estimate. I
 
 **Owner only:** the **Rate table** (TPL rate, Comprehensive rate, range spread, value bands with representative values, add-ons with amounts). Press **Save**.
 
-::: info 📷 Screenshot placeholder
-`/screenshots/04-sales-agent-guide/02-insurance-calculator.png` — Insurance estimate with vehicle type, coverage and add-ons.
-:::
+![Insurance estimate with vehicle type, coverage and add-ons](/screenshots/04-sales-agent-guide/02-insurance-calculator.png)

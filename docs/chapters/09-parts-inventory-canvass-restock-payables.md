@@ -33,9 +33,7 @@ When a job line uses a **Catalog part**, stock is taken from on hand.
 
 **Pending requests** (from the page menu) lists job parts-buys waiting for payment or arrival, with **Open job**.
 
-::: info 📷 Screenshot placeholder
-`/screenshots/09-parts-inventory-canvass-restock-payables/01-parts-stock.png` — Parts & Inventory stock list with Low stock filter.
-:::
+![Parts & Inventory stock list with Low stock filter](/screenshots/09-parts-inventory-canvass-restock-payables/01-parts-stock.png)
 
 ## 9.2 Reviewing technician canvass quotes
 
@@ -98,6 +96,4 @@ All supplier bills with a balance, from job parts-buys and restock POs. Parts ta
 
 The **Cash** board shows how many payables are due soon or overdue.
 
-::: info 📷 Screenshot placeholder
-`/screenshots/09-parts-inventory-canvass-restock-payables/02-payables.png` — Payables with Due soon / Overdue tabs and Record payment.
-:::
+![Payables with Due soon / Overdue tabs and Record payment](/screenshots/09-parts-inventory-canvass-restock-payables/02-payables.png)

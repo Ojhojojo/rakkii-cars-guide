@@ -11,6 +11,7 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Start here', link: '/chapters/01-welcome-and-navigation' },
+      { text: "What's new", link: '/whats-new' },
       { text: 'Ops App (int)', link: 'https://rakkii-ops-int.web.app' },
       { text: 'Customer Portal (int)', link: 'https://rakkii-web-int.web.app' }
     ],
@@ -21,7 +22,8 @@ export default defineConfig({
         text: 'Part 1 — Getting started',
         collapsed: false,
         items: [
-          { text: '1. Welcome & navigation', link: '/chapters/01-welcome-and-navigation' }
+          { text: '1. Welcome & navigation', link: '/chapters/01-welcome-and-navigation' },
+          { text: "What's new", link: '/whats-new' }
         ]
       },
       {

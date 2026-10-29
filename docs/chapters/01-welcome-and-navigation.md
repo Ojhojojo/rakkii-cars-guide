@@ -40,9 +40,7 @@ On the integration site only, a **Quick sign-in** box lists test accounts. Pick 
 Your account exists but has no role, or the page is outside your role. Ask the Shop Owner to check your role in **Admin › Staff and pay** (Chapter 13). The page links you back to your own home.
 :::
 
-::: info 📷 Screenshot placeholder
-`/screenshots/01-welcome-and-navigation/01-sign-in.png` — Rakkii Ops sign-in page (Email, Password, Sign in).
-:::
+![Rakkii Ops sign-in page (Email, Password, Sign in)](/screenshots/01-welcome-and-navigation/01-sign-in.png)
 
 ## 1.3 The six hubs
 
@@ -68,9 +66,7 @@ When the Workshop hub is open, the owner also gets three pinned shortcuts: **Das
 
 **Sales Agent** — **Sales** (My pipeline, My commission, Monitoring, Insurance) and **Me** (Time clock, My payslip, Leave, My overtime, My incentive, My profile).
 
-::: info 📷 Screenshot placeholder
-`/screenshots/01-welcome-and-navigation/02-hub-switcher.png` — hub switcher open, showing Workshop, Sales, Finance, HR, Admin, Me.
-:::
+![hub switcher open, showing Workshop, Sales, Finance, HR, Admin, Me](/screenshots/01-welcome-and-navigation/02-hub-switcher.png)
 
 ## 1.4 Owner: switching the active branch
 
@@ -91,9 +87,7 @@ The settings URL keeps your place: `/admin/settings?area=shop&section=getting-pa
 Payments, expenses and payroll are saved to the **active shop**. Confirm the shop name in the top bar before recording anything.
 :::
 
-::: info 📷 Screenshot placeholder
-`/screenshots/01-welcome-and-navigation/03-branch-switcher.png` — Switch shop branch menu and the Shops list with "Switch to this shop".
-:::
+![Shop settings with the Shop picker (the top-bar shop switcher appears only when you own more than one shop)](/screenshots/01-welcome-and-navigation/03-branch-switcher.png)
 
 ## 1.5 Dark mode
 
@@ -104,8 +98,11 @@ The choice is saved on that device and also applies to the sign-in page.
 
 ## 1.6 Finding things fast
 
+- **Top bar search** (**Plate, job or customer**, press <kbd>/</kbd> to jump to it) finds any job by plate, job reference or customer, open or closed, from any hub.
 - **Job history** (`/workshop/jobs`) searches by plate, customer or reference, with **Created from / Created to** dates and status chips.
 - Every job opens in the **job workspace** (`/workshop/jobs/:id`) with tabs: **Overview, Quote, Canvass, Parts buy, Work, Insurance, Pay, Files, Release**. Some tabs only show when they apply (for example **Insurance** only on insurance jobs; **Canvass** and **Parts buy** only when the job needs them).
+- Each job shows a blue **next-step banner** under the plate that says what to do now ([Chapter 5](/chapters/05-lane-1-private-walk-in-jobs#next-step)).
+- Actions that are hard to undo (create a quote, post an invoice, record a payment, release a car, approve leave) ask you to confirm first.
 - Old bookmarks such as `/board`, `/clock` or `/ops/jobs` still open: they redirect to the hub path.
 
 ## 1.7 Words you will see
@@ -119,4 +116,8 @@ The choice is saved on that device and also applies to the sign-in page.
 | **Who pays** | On each work line: Customer or Insurer. Drives split billing. |
 | **Work billed / Cash in** | Accrual (what was invoiced) vs money actually received. The app always shows both. |
 | **Owner override** | A release or gate bypass the owner records with a written reason. Always logged. |
-| **Manila time** | All dates and cut-offs in the app use Asia/Manila. |
+| **Manila time** | All dates and cut-offs in the app use Asia/Manila. Dates read like "Oct 29, 2026". |
+| **Target date** | When the repair should be done (it used to be called "Promised date"). |
+| **Appointment** | When the car is booked to come in. Separate from the target date. |
+| **This week** | Monday to Sunday, on every page with a week (Attendance, Payroll, My week). |
+| **Margin on cost** | (sell − cost) ÷ cost. A ₱300 cost sold at ₱800 is 167% on cost. |

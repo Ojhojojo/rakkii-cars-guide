@@ -28,9 +28,7 @@ Default accounts: **Cash on hand**, **GCash**, **Maya**, **Bank**.
 
 **End-of-day routine:** count the cash drawer → compare with **Cash on hand** → **Adjust** with a reason if different → **Transfer** bank deposits from Cash on hand to Bank.
 
-::: info 📷 Screenshot placeholder
-`/screenshots/12-finance-wallets-expenses-agent-fees-pnl-month-close-export/01-money-accounts.png` — Money accounts with Transfer dialog.
-:::
+![Money accounts with Transfer dialog](/screenshots/12-finance-wallets-expenses-agent-fees-pnl-month-close-export/01-money-accounts.png)
 
 ## 12.3 Expenses (`/finance/expenses`)
 
@@ -81,9 +79,7 @@ Pick the month with the arrows.
 
 Menu: **Export shop P&L (CSV)**, **Export job P&L (CSV)**, **Print**. This is a management report, not a BIR filing.
 
-::: info 📷 Screenshot placeholder
-`/screenshots/12-finance-wallets-expenses-agent-fees-pnl-month-close-export/02-pnl.png` — Monthly shop P&L statement.
-:::
+![Monthly shop P&L statement](/screenshots/12-finance-wallets-expenses-agent-fees-pnl-month-close-export/02-pnl.png)
 
 ## 12.7 Month close (`/finance/month-close`) — owner only
 
