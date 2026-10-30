@@ -99,9 +99,15 @@ The choice is saved on that device and also applies to the sign-in page.
 ## 1.6 Finding things fast
 
 - **Top bar search** (**Plate, job or customer**, press <kbd>/</kbd> to jump to it) finds any job by plate, job reference or customer, open or closed, from any hub.
-- **Job history** (`/workshop/jobs`) searches by plate, customer or reference, with **Created from / Created to** dates and status chips.
+- **Job history** (`/workshop/jobs`) searches by plate, customer or reference, with **Created from / Created to** dates and a **Status** filter: **All**, **Released · not done** or **Done**.
+  - **Released · not done** (amber) means the car is out but something is still open, for example an insurer payment. **Done** means nothing is left.
+  - The **Progress** column shows how far each job is ("6 of 7"). On a phone each job shows as a card.
+
+![Job history with Done and Released · not done labels and the Progress column](/screenshots/01-welcome-and-navigation/04-job-history.png)
+
 - Every job opens in the **job workspace** (`/workshop/jobs/:id`) with tabs: **Overview, Quote, Canvass, Parts buy, Work, Insurance, Pay, Files, Release**. Some tabs only show when they apply (for example **Insurance** only on insurance jobs; **Canvass** and **Parts buy** only when the job needs them).
-- Each job shows a blue **next-step banner** under the plate that says what to do now ([Chapter 5](/chapters/05-lane-1-private-walk-in-jobs#next-step)).
+- Each job shows a **status banner**, a **steps bar** and a blue **next-step banner** that says what to do now ([Chapter 5](/chapters/05-lane-1-private-walk-in-jobs#progress)).
+- Prints open the print dialog on a computer. On a phone they save as a PDF named after the paper and plate ([Chapter 5](/chapters/05-lane-1-private-walk-in-jobs#printing)).
 - Actions that are hard to undo (create a quote, post an invoice, record a payment, release a car, approve leave) ask you to confirm first.
 - Old bookmarks such as `/board`, `/clock` or `/ops/jobs` still open: they redirect to the hub path.
 
@@ -119,5 +125,6 @@ The choice is saved on that device and also applies to the sign-in page.
 | **Manila time** | All dates and cut-offs in the app use Asia/Manila. Dates read like "Oct 29, 2026". |
 | **Target date** | When the repair should be done (it used to be called "Promised date"). |
 | **Appointment** | When the car is booked to come in. Separate from the target date. |
+| **Released / Done** | Released: the car has left the shop. Done: nothing is left on the job (it used to be called Closed). |
 | **This week** | Monday to Sunday, on every page with a week (Attendance, Payroll, My week). |
 | **Margin on cost** | (sell − cost) ÷ cost. A ₱300 cost sold at ₱800 is 167% on cost. |

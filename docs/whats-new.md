@@ -2,6 +2,39 @@
 
 Changes to Rakkii Ops that this guide now covers. Dates are when the change reached the integration app.
 
+## Oct 31, 2026
+
+### Released and Done are separate
+- **Released** means the car is out; **Done** (was "Closed") means nothing is left on the job. The button is **Mark as done** ([Chapter 5](/chapters/05-lane-1-private-walk-in-jobs#_5-11-mark-the-job-as-done)).
+- Only open checklist items block **Mark as done**. Money still owed (for example an insurer payment) is listed but does not block. The Owner can mark it done anyway with a reason, saved in the Status log.
+- **Job history** has **Released · not done** and **Done** labels and filters, plus a **Progress** column. On a phone each job is a card.
+
+### See where a job is at a glance
+- Every job has a **status banner**, a **steps bar** ("Step 6 of 7 · Paid", tap it for each step's date) and ✓ / ● marks on the tabs ([Chapter 5](/chapters/05-lane-1-private-walk-in-jobs#progress)).
+- Once the car is out, **Not done yet** lists what is still open: checklist items, balances, unpaid suppliers and a payment proof to review.
+- On the **Shop board**, each card has a **What's left** button that opens the same list without leaving the board ([Chapter 10](/chapters/10-workshop-operations-board-calendar-backjobs-contractors)).
+- The balance reads **Quote ₱…** before work, **To collect ₱…** during work and **Customer owes ₱…** once the car is out.
+
+### Dashboard
+- **Announcements** are at the top, above **Priority jobs**.
+- Five figures instead of nineteen: **Cars in shop**, **Ready for pickup**, **On hold**, **Cash in today** and **Overdue invoices**. Empty lists are hidden.
+
+### Less to think about on the job page
+- **Print job order** plus a **More papers ▾** menu replace the row of print buttons in the Job order box ([Chapter 5](/chapters/05-lane-1-private-walk-in-jobs#printing)).
+- On a phone, prints save as a PDF named after the paper and plate, for example `Gate pass DEMO 101.pdf`. The gate pass shows **Released on**, and the acceptance fills **Work completed** by itself.
+- **Technicians and dates** shows the dates the app recorded (Car in, Started, Done, Car out, Billed, Paid). The date boxes are behind **Edit dates**.
+- The technician list shows technicians first; Owner and Admin are behind **Show owner and admin**.
+- **Send to QC** asks first if checklist steps are still open.
+- **QC photos** show one tile per angle with a ✓. Upload buttons show only for missing angles; **Replace a photo** and **Show photos** are a tap away ([Chapter 2](/chapters/02-technician-daily-guide#_2-8-uploading-the-four-qc-photos)).
+- The Pay tab has a **Down payment** card in plain words, with the overrides behind **Change the down payment**. **Commission and agent fee** moves to the bottom, folded, and the paper previews are behind **Show … preview**.
+- The Quote tab with no lines says to add lines first, with a **Go to Work tab** button.
+
+### Other screens
+- **Parts & Inventory** fits on an iPad and laptop without scrolling sideways; the unit sits with On hand ("10 pc") ([Chapter 9](/chapters/09-parts-inventory-canvass-restock-payables)).
+- On an iPad, the top bar no longer overlaps and the Shop board shows two lanes side by side.
+- Customer mobiles can be tapped to call; the customer page has **Call** and **Text** links.
+- **Finance › Payments › Pending proofs** shows the customer's mobile.
+
 ## Oct 29, 2026
 
 ### Jobs tell you what to do next

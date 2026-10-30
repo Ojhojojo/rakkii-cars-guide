@@ -16,7 +16,9 @@ Every unpaid supplier bill from either route lands in **Finance › Payables**.
 3. Press **Add part**.
 
 ### The stock list
-Columns: **Name/SKU**, **Category**, **Unit**, **Location**, **On hand**, **Reorder at**, **Last cost**, **Value**, **Preferred supplier**, **Status**.
+Columns: **Name** (with SKU and category under it), **Location**, **On hand** (with the unit, for example "10 pc"), **Reorder at**, **Last cost**, **Value**, **Preferred supplier**, and **⋮** for row actions. Inactive parts carry an **Inactive** badge by the name.
+- On narrower screens (iPad, small laptops) **Reorder at**, **Last cost** and **Preferred supplier** step back so the table fits without scrolling sideways. They are still on each part's edit screen.
+- The tiles at the top read **Parts**, **Low stock**, **Stock value** and **Pending requests**.
 - **Search**, **Low stock** and **Category** filters.
 - Select several rows to **Set category** in bulk.
 - **Low stock** means on hand is at or below **Reorder at**, or below zero. Low parts are flagged here and when a technician picks the part on a job ("on hand 2 · Low · min 4").
