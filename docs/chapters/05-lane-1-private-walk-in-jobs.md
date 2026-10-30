@@ -7,7 +7,7 @@ This is the base flow every other lane builds on. A private customer drives in (
 ```text
 Intake forms → New job (Booked) → Quote → Customer approves → Down payment
 → Assign technician → Under repair → Quality check → Ready for pickup
-→ Customer invoice → Final payment → Release checklist → Released → Closed
+→ Customer invoice → Final payment → Release checklist → Released → Done
 ```
 
 ## Status map {#status-map}
@@ -24,9 +24,9 @@ Intake forms → New job (Booked) → Quote → Customer approves → Down payme
 | **Quality check** | Being inspected | **Ready for pickup** / **Back to shop** |
 | **On hold** | Paused with a reason | **Resume** / **Cancel job** |
 | **Ready for pickup** | Done, waiting for the customer | **Release car** |
-| **Released** | Car has left | **Close job** (or **Mark invoiced**) |
-| **Invoiced** | Optional bookkeeping step after release | **Close job** |
-| **Closed** | Finished | — |
+| **Released** | Car has left, but money or checklist items may still be open | **Mark as done** (or **Mark invoiced**) |
+| **Invoiced** | Optional bookkeeping step after release | **Mark as done** |
+| **Done** | Nothing left on the job (this used to be called **Closed**) | — |
 | **Cancelled** / **No-show** | Ended without work (reason required to cancel) | — |
 
 Every status change is kept in the job's **Status log** with who moved it and when.
@@ -44,6 +44,29 @@ Every job shows one blue banner under the plate that says what to do next, for e
 | "Collect PHP … from customer before release." | The customer still owes and the car is held |
 
 Technicians see their own version of the banner, for example "Finish the bay checklist (1 step left), then send to QC." ([Chapter 2](/chapters/02-technician-daily-guide)).
+
+### Status, steps and what's left {#progress}
+
+The top of every job tells you where it is without opening each tab:
+
+- **Status banner** — the job's status in words, with when and by whom it last moved, for example "Released · car is out" and "Oct 30, 2026, 3:21 PM by …". On-hold and cancel reasons show here too.
+- **Steps bar** — "Step 6 of 7 · Paid". Tap it to see all seven steps with their dates: **Intake**, **Approved**, **Work done**, **QC passed**, **Released**, **Paid**, **Done**.
+- **Tab marks** — ✓ means the tab is finished, ● means it needs you. They show on **Quote**, **Parts buy**, **Work**, **Pay** and **Release**.
+- **Not done yet** — once the car is out, a box lists what is still open: checklist items, the customer and insurer balances, unpaid suppliers and a payment proof to review. It does not show a count; it just lists the items.
+
+Technicians see no money in the banner, the steps or the list.
+
+### Money wording {#money-wording}
+
+The customer's balance reads differently as the job moves, so a fresh job never looks like a debt:
+
+| Stage | Wording |
+|---|---|
+| Before work is approved | **Quote ₱…** |
+| Work approved, car still in the shop | **To collect ₱…** |
+| Car is out | **Customer owes ₱…** |
+
+The same wording is used on the job, the Shop board cards and the board's **What's left** pop-up.
 
 ## 5.1 Before the car is touched: intake paperwork
 
@@ -92,7 +115,7 @@ If the parts need supplier prices first, tick **Needs canvass** / **Needs parts 
 ![Work lines card with one labor line, Who pays, Qty, Cost and Sell](/screenshots/05-lane-1-private-walk-in-jobs/05-work-lines.png)
 
 ### Customer estimate and margin warning (Quote tab)
-1. Open the **Quote** tab. The **Customer estimate** shows sell prices only.
+1. Open the **Quote** tab. The **Customer estimate** shows sell prices only. If the job has no lines yet, the tab says to add work and parts lines first, with a **Go to Work tab** button.
 2. Check the margin. The job header shows it as a chip, for example **Margin 167% on cost**.
    - Margin is counted **on cost**: (sell − cost) ÷ cost. A ₱300 cost sold at ₱800 is 167% on cost. The shop's minimum uses the same basis.
    - If it is under the shop's minimum (30% by default) you see "Margin X% on cost is under the 30% floor."
@@ -127,14 +150,19 @@ The **Pay › Money** card shows **Customer owes**, **Cash in**, **DP required**
 5. Press **Record payment**, then **Print acknowledgement** for the customer.
 
 **Down payment rules**
+
+The **Down payment** card on the Pay tab says in plain words whether the deposit holds the job: "Needed before work starts", "Needed before the car is released" or "For reference only, it does not hold the job", plus whether it is covered.
 - The owner decides per nature whether the deposit blocks anything: **Does not block** (default), **Before work** or **Before release** (Chapter 13).
-- To change one job, use **Percent override** or **Amount override** with a **Reason**, then **Save down payment**.
+- To change one job, open **Change the down payment**, use **Percent override** or **Amount override** with a **Reason**, then **Save down payment**.
 - If the deposit blocks work and you must start anyway, the owner (or admin) enters a **Bypass reason to start work without the deposit**.
 
 ## 5.6 Assign the technician and start work
 
 1. **Work › Technicians and dates**: pick the technician(s), choose a **Reason for change**, press **Save technicians**. Changes are kept in **Assignment history**.
-2. Set **Start** and **Car in** dates and **Save dates**.
+   - Technicians are listed first. The Owner and Admin can still be assigned: press **Show owner and admin** (they show anyway if one is already on the job).
+2. You don't need to type the work dates. The card shows the dates the app recorded in one line: **Car in**, **Started**, **Done**, **Car out**, **Billed** and **Paid**. They come from the status moves, the release, the first posted invoice and the payment that cleared the balance.
+   - To correct one, open **Edit dates**, change it and press **Save**. A typed date always wins.
+   - The Job order box and the printed job order use the same dates.
 3. Apply a **Bay checklist** template (**Template › Apply template**) so the technician has steps to tick.
 4. Press **Start work**. Status: **Under repair**. The banner changes to "Finish work and send to QC."
 
@@ -145,9 +173,26 @@ The **Pay › Money** card shows **Customer owes**, **Cash in**, **DP required**
 The technician ticks the **Bay checklist** and uploads the four **QC photos** — **Front**, **Rear**, **Left side (LS)**, **Right side (RS)** ([Chapter 2](/chapters/02-technician-daily-guide#_2-8-uploading-the-four-qc-photos)).
 
 1. When work is done, press **Send to QC**. While QC photos are missing, **Send to QC** is the main button and **Ready for pickup** stays greyed out with the reason "Need 4 QC photos before Ready/Released (have 0)."
+   - If checklist steps are still open, the app asks first: "Send to QC with steps open? 1 of 2 checklist steps are not ticked yet." Press **Send to QC anyway** or go back and tick them.
 2. On **Quality check** the banner lists the missing angles ("Take the missing QC photos (Front, Rear). 2 of 4 done."). Once all four are in, **Ready for pickup** unlocks and the banner says "Pass QC and mark ready for pickup."
 3. If photos truly cannot be taken, the owner types a **QC override reason** and **Save QC override**.
-4. Print the **QC summary** if the customer wants it.
+4. Print the **QC summary** (**More papers › QC summary**) if the customer wants it.
+
+### Printing papers {#printing}
+
+The **Job order** box (Work tab) has two buttons instead of a long row:
+
+- **Print job order** for the bay.
+- **More papers ▾**, grouped as:
+  - **For the customer** — Estimate, Customer invoice, Payment instructions, Payment acknowledgement, Acceptance
+  - **For the shop** — Gate pass, QC summary, Insurer invoice, Release of Claim (insurance jobs)
+  - **Forms to fill** — Pickup/Delivery waiver, Intake checklist
+
+The Quote, Pay and Release tabs keep their own print buttons for the paper you need at that step. On the Pay tab, the on-screen paper previews are folded behind **Show … preview** buttons; printing is the same.
+
+::: tip Printing from a phone
+Phones can't print a PDF inside the app, so on a phone each print saves the PDF instead, named after the paper and the plate (for example `Gate pass DEMO 101.pdf`). Open it from the download bar to print or share it. Computers and laptops still get the print dialog.
+:::
 
 ## 5.8 Create and post the customer invoice
 
@@ -171,6 +216,8 @@ By default the car is held until the customer balance is zero ("Hold the car unt
 
 1. Open the **Release** tab. If the job is not yet **Ready for pickup** it says "Move the job to Ready for pickup first." The tab shows **QC photos: 4/4** and **Customer balance**.
 2. Print what the customer and guard need, right from the Release tab: **Print gate pass** for the guard and **Print customer invoice** for the customer. After release the tab also offers **Print acceptance** (acceptance and satisfaction of repair) for the customer to sign.
+   - The gate pass shows **Released on** with the date and time (or "Not released yet").
+   - The acceptance fills **Work completed** from the day the job first reached QC, Ready or Released, unless someone typed a date.
 3. Tick the three release checks:
    - **Keys logged**
    - **Documents in / out**
@@ -194,8 +241,13 @@ Before ticking **Customer signed release**, confirm the shop's hand-over steps: 
 
 ![Release tab with Keys logged, Documents in / out, Customer signed release](/screenshots/05-lane-1-private-walk-in-jobs/03-release-checklist.png)
 
-## 5.11 Close the job
+## 5.11 Mark the job as done
 
-1. After release, press **Close job** (or **Mark invoiced** first if you track that step).
-2. A closed job is read-only. Its car, payments and invoices stay in the customer's **Service history**.
-3. Set **Remind me** (3, 6 or 12 months) on Overview if the customer should get a service reminder email.
+A car can leave before everything is settled, for example while an insurer still has to pay. So **Released** means the car is out, and **Done** means nothing is left.
+
+1. After release, check the **Not done yet** box on the job (see [Status, steps and what's left](#progress)).
+2. Press **Mark as done** (or **Mark invoiced** first if you track that step).
+   - **Only open checklist items block it.** Money still owed is listed but does not block, because insurers can pay long after release.
+   - With checklist items open, the button is off for everyone except the Owner. The Owner can still mark it done by typing a reason; it is saved in the job's **Status log** as "Done with N checklist items open: …".
+3. A done job is read-only. Its car, payments and invoices stay in the customer's **Service history**. Once a job is released or done, the Overview hides the date edit boxes and keeps the summary lines.
+4. Set **Remind me** (3, 6 or 12 months) on Overview if the customer should get a service reminder email.

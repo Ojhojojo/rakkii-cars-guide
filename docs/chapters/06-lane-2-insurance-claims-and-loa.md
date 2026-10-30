@@ -126,12 +126,12 @@ If a job is set to **Wait for the insurer**, release is blocked until the insure
 
 ## 6.10 Print the Release of Claim
 
-1. On the **Release** tab (also on **Pay** and the Work tab print list) press **Release of Claim**.
+1. On the **Release** tab (also on **Pay**, and under **More papers › For the shop** in the Work tab's Job order box) press **Release of Claim**.
 2. The paper fills in the insured, insurer, claim and policy numbers, plate, vehicle and LOA number. The wording comes from **Admin › Shop settings › Workshop rules › Insurance release of claim**. Owners and admins print the same shop wording; if the shop has not set any, the default wording is used.
 3. Have the customer sign it; send it to the insurer with the insurer invoice.
 
 ![Release tab of an insurance job with Release of Claim, Print gate pass and Print customer invoice](/screenshots/06-lane-2-insurance-claims-and-loa/03-release-tab.png)
 
-When the insurer pays, record it on the job with **Who paid**: Insurer and **Apply to invoice** = the insurer invoice. Then **Close job**.
+Until the insurer pays, the job shows **Released · not done** in Job history and lists "Insurer to pay ₱…" under **Not done yet**. When the insurer pays, record it on the job with **Who paid**: Insurer and **Apply to invoice** = the insurer invoice. Then **Mark as done**.
 
 ![Pay tab showing a posted insurer invoice and customer invoice](/screenshots/06-lane-2-insurance-claims-and-loa/02-split-invoices.png)

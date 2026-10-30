@@ -52,7 +52,7 @@ At the top, **Assigned to you** shows new assignments this week, who assigned th
 3. Read **Notes** for the desk's instructions.
 4. Use **Add photo** / **Bay photo** for progress pictures as you go.
 
-The desk moves the job to **Under repair** when work can start (after the quote, deposit or LOA is in place). You can see the current status at the top of the job.
+The desk moves the job to **Under repair** when work can start (after the quote, deposit or LOA is in place). The status banner at the top of the job shows where it is, and the steps bar under it shows how far along it is (tap it to see each step). A ● on the **Work** tab means something there still needs you; ✓ means it is done.
 
 ### Your next-step banner
 Under the plate a blue banner tells you what to do now:
@@ -113,7 +113,7 @@ Insurers often require the damaged parts that were replaced. On insurance jobs t
 
 1. Press **Add part**.
 2. Fill **Description** (pick from the job's lines or type), **Qty**, **Surrender date**, **Received by** and an optional **Note**.
-3. Press **Save**. Edit or delete a row until the job is closed.
+3. Press **Save**. Edit or delete a row until the job is done.
 4. If nothing has to go back to the insurer, tick **No parts to surrender**.
 
 Until one of these is done the desk sees the hint "No surrendered parts logged."
@@ -149,12 +149,15 @@ A car cannot move to **Ready for pickup** or be **Released** until it has the re
 
 1. Finish the repair, tick the last checklist step and clean up.
 2. Press **Send to QC**. Status: **Quality check**. The QC photos card moves to the top of the Work tab.
-3. Under **QC photos**, upload one photo for each angle with **Choose file** or **Take photo**:
+   - If checklist steps are still open, the app asks "Send to QC with steps open?" first. Go back and tick them, or press **Send to QC anyway** if they really don't apply.
+3. Under **QC photos**, each angle has its own tile. Upload a photo on each missing tile with **Choose file** or **Take photo**:
    - **Front**
    - **Rear**
    - **Left side (LS)**
    - **Right side (RS)**
-4. The counter shows progress (for example **3/4**) and the banner names the missing angles. Each uploaded photo is listed under the slots (for example "Front · front.jpg"); tap it to open it, or **Clear** to replace it.
+4. A tile turns green with a ✓ and the file name once its photo is in; the upload buttons only show for the angles still missing. The counter shows progress (for example **3/4**) and the banner names the missing angles.
+   - Tap a done tile to open its photo. **Show photos** loads small pictures of all of them (they load only when you ask, to save data).
+   - To swap a photo, open **Replace a photo** and upload the new one for that angle.
 5. When all four are in, the banner says "QC photos are done. The desk marks the car ready for pickup." You are done; the desk marks the car ready.
 
 Only the owner (or admin) can skip photos, with a written **QC override reason**.

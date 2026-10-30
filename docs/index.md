@@ -40,7 +40,7 @@ features:
 
 The main path of every job:
 
-`Booked` → `Quoted` → `Under repair` → `Quality check` → `Ready for pickup` → `Released` → `Closed`
+`Booked` → `Quoted` → `Under repair` → `Quality check` → `Ready for pickup` → `Released` → `Done`
 
 Side statuses you will also see: `New inquiry`, `For canvass`, `Waiting for LOA`, `Authorized`, `Waiting for parts`, `On hold`, `Invoiced`, `Cancelled`, `No-show`. [Chapter 5](/chapters/05-lane-1-private-walk-in-jobs#status-map) has the full map.
 

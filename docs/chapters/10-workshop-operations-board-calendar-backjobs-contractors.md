@@ -6,7 +6,11 @@ The pages in this chapter help you run the floor across all jobs at once instead
 
 ## 10.1 Shop board (`/workshop/board`)
 
-The Kanban view of every car in play. Each card shows the plate, a subtitle (type, category), the customer, checklist progress, promised date and any amount the customer still owes.
+The Kanban view of every car in play. Each card shows the plate, a subtitle (type, category), the customer, checklist progress, target date and the customer's balance (**Quote ₱…**, **To collect ₱…** or **Customer owes ₱…**, see [Money wording](/chapters/05-lane-1-private-walk-in-jobs#money-wording)).
+
+- The status badge shows only when the lane holds more than one status (for example **Quote / LOA**). In single-status lanes such as **Under repair**, **On hold** and **Ready** the lane name already says it.
+- Each card has a **What's left** button. It opens a pop-up with the job's status, the open items (up to 10 checklist items by name, balances, unpaid suppliers) and all seven steps, plus **Open job**. Tap anywhere else on the card to open the job.
+- On an iPad held upright the lanes show two side by side.
 
 | Lane | Statuses in it |
 |---|---|
@@ -29,7 +33,15 @@ Switch between **Columns** (Kanban) and **List** (sortable table: Plate, Custome
 
 **Morning routine:** filter **Target date: Due today** and **Overdue**, then **Stuck: Unpaid** on the Ready lane — those cars must not leave until paid.
 
-The **Dashboard** (`/workshop`) complements the board with **Priority jobs**, **Announcements**, **Today's appointments** (Confirmed / In shop / Waiting), **Due today**, **New web & Messenger inquiries** (with **Confirm booking**), **Ready, but customer still owes**, tiles (**Cars in shop**, **On hold**, **Due today**, **Cash in today**, **Overdue invoices**) and counts by status, type and channel.
+The **Dashboard** (`/workshop`) complements the board. From the top:
+
+1. **Announcements** (for every role, technicians included).
+2. **Priority jobs**.
+3. **Today's appointments** (Confirmed / In shop / Waiting).
+4. Five figures: **Cars in shop**, **Ready for pickup**, **On hold**, **Cash in today** and **Overdue invoices**. The last two are for the money roles only.
+5. **Due today**, **New web & Messenger inquiries** (with **Confirm booking**) and **Ready, but customer still owes** ("Do not release these cars until they are paid."). These lists show only when they have something in them.
+
+The old counts by status, type and channel are gone; the Shop board shows the same thing.
 
 ### Priority jobs
 The owner ranks the jobs the shop must finish first. On the Dashboard, **Priority jobs** lists them in order; under **Suggested** the app proposes overdue jobs (plate and target date), and **Add** puts one on the list. You can also make a job a priority from the job itself with **Make priority** and add a short note. Technicians see their priority jobs ranked on **My jobs**.
@@ -65,8 +77,10 @@ A job has two separate dates:
 ### Customers (`/workshop/customers`)
 The list shows each customer with **Cars**, **Last visit**, **Total spent** and **Open jobs**. Use **New customer** or open a row.
 
+Tap a customer's mobile number in the list to call them from a phone or tablet.
+
 On the customer page (`/workshop/customers/:id`):
-- **Customer** details: Name, Mobile, Email, Category (Person, Company, Government), TIN, Credit terms, Billing address, Notes — **Edit** to change.
+- **Customer** details: Name, Mobile, Email, Category (Person, Company, Government), TIN, Credit terms, Billing address, Notes — **Edit** to change. **Call** and **Text** links sit next to the mobile.
 - **Cars** — every vehicle, with last visit; **Add car**.
 - **Open jobs** and **Service history** (date, plate, work done, amount).
 - **New job for them** starts a job with the customer filled in.
