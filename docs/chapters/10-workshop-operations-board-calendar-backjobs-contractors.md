@@ -12,6 +12,8 @@ The Kanban view of every car in play. Each card shows the plate, a subtitle (typ
 - Each card has a **What's left** button. It opens a pop-up with the job's status, the open items (up to 10 checklist items by name, balances, unpaid suppliers) and all seven steps, plus **Open job**. Tap anywhere else on the card to open the job.
 - On an iPad held upright the lanes show two side by side.
 
+![What's left pop-up for a job under repair: status, To do list and the seven steps](/screenshots/10-workshop-operations-board-calendar-backjobs-contractors/04-whats-left.png)
+
 | Lane | Statuses in it |
 |---|---|
 | **New** | New inquiry, Booked |
@@ -52,9 +54,9 @@ The search box in the top bar (**Plate, job or customer**, shortcut <kbd>/</kbd>
 ### Customer activity
 **Workshop › Customer activity** lists what customers did on the website, pay link or portal: web bookings, quote requests, estimates approved or declined, extras approved, payment screenshots and payment notes. The bell in the top bar shows how many are unseen; once anyone at the desk marks an item seen, it leaves the count for everyone. Open an item to go to the job.
 
-![Owner Dashboard with Priority jobs suggestions, Announcements and today's tiles](/screenshots/10-workshop-operations-board-calendar-backjobs-contractors/03-dashboard.png)
+![Owner Dashboard: Announcements, Priority jobs, Today's appointments and the five figures](/screenshots/10-workshop-operations-board-calendar-backjobs-contractors/03-dashboard.png)
 
-![Shop board columns view with filters](/screenshots/10-workshop-operations-board-calendar-backjobs-contractors/01-shop-board.png)
+![Shop board columns view with filters and a What's left button on each card](/screenshots/10-workshop-operations-board-calendar-backjobs-contractors/01-shop-board.png)
 
 ## 10.2 Appointment & target-date calendar (`/workshop/calendar`)
 

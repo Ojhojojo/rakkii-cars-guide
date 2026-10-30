@@ -56,6 +56,8 @@ The top of every job tells you where it is without opening each tab:
 
 Technicians see no money in the banner, the steps or the list.
 
+![A released job: status banner, Not done yet list, the steps opened with their dates, Mark as done and the tab marks](/screenshots/05-lane-1-private-walk-in-jobs/08-job-progress.png)
+
 ### Money wording {#money-wording}
 
 The customer's balance reads differently as the job moves, so a fresh job never looks like a debt:
@@ -112,7 +114,7 @@ The appointment day (when the car comes in) is separate from the target date. Se
 
 If the parts need supplier prices first, tick **Needs canvass** / **Needs parts buy** on **Overview** (retail jobs can skip both) and see [Chapter 9](/chapters/09-parts-inventory-canvass-restock-payables).
 
-![Work lines card with one labor line, Who pays, Qty, Cost and Sell](/screenshots/05-lane-1-private-walk-in-jobs/05-work-lines.png)
+![Work lines card with labor and part lines, Who pays, Qty, Cost and Sell](/screenshots/05-lane-1-private-walk-in-jobs/05-work-lines.png)
 
 ### Customer estimate and margin warning (Quote tab)
 1. Open the **Quote** tab. The **Customer estimate** shows sell prices only. If the job has no lines yet, the tab says to add work and parts lines first, with a **Go to Work tab** button.
@@ -166,7 +168,7 @@ The **Down payment** card on the Pay tab says in plain words whether the deposit
 3. Apply a **Bay checklist** template (**Template › Apply template**) so the technician has steps to tick.
 4. Press **Start work**. Status: **Under repair**. The banner changes to "Finish work and send to QC."
 
-![Job header after Start work: Under repair, Send to QC as the main button, Ready for pickup locked](/screenshots/05-lane-1-private-walk-in-jobs/06-under-repair-qc-gate.png)
+![Job header after Start work: Under repair banner, Step 3 of 7, Send to QC as the main button, Ready for pickup locked](/screenshots/05-lane-1-private-walk-in-jobs/06-under-repair-qc-gate.png)
 
 ## 5.7 Bay checklist and QC photos
 
@@ -188,6 +190,8 @@ The **Job order** box (Work tab) has two buttons instead of a long row:
   - **For the shop** — Gate pass, QC summary, Insurer invoice, Release of Claim (insurance jobs)
   - **Forms to fill** — Pickup/Delivery waiver, Intake checklist
 
+![More papers menu open: For the customer, For the shop and Forms to fill, with the recorded dates under it](/screenshots/05-lane-1-private-walk-in-jobs/09-more-papers.png)
+
 The Quote, Pay and Release tabs keep their own print buttons for the paper you need at that step. On the Pay tab, the on-screen paper previews are folded behind **Show … preview** buttons; printing is the same.
 
 ::: tip Printing from a phone
@@ -208,7 +212,7 @@ Posting an invoice does not change the job status.
 2. Press **Fill customer balance** to enter exactly what is left, pick the **Method**, and **Apply to invoice**.
 3. **Record payment** and confirm ("Record PHP 800.00 from the customer?"). **Customer owes** should read PHP 0.00 and the banner changes to "Release the car."
 
-![Pay tab Money card after the final payment: Customer owes PHP 0.00](/screenshots/05-lane-1-private-walk-in-jobs/07-pay-money.png)
+![Pay tab Money card after the final payment (Customer owes PHP 0.00) and the Down payment card](/screenshots/05-lane-1-private-walk-in-jobs/07-pay-money.png)
 
 By default the car is held until the customer balance is zero ("Hold the car until the customer has paid: Yes" on Overview).
 
@@ -239,7 +243,7 @@ Before ticking **Customer signed release**, confirm the shop's hand-over steps: 
 | Release checks not ticked | "Keys logged, documents in/out and customer signed must all be ticked…" | Tick, or owner override + reason |
 | Invoices not posted (if the job holds for invoices) | "Post the customer invoice before release." | Post, or owner reason "Reason to release before invoices are posted" |
 
-![Release tab with Keys logged, Documents in / out, Customer signed release](/screenshots/05-lane-1-private-walk-in-jobs/03-release-checklist.png)
+![Release tab of a Ready job: QC photos, customer balance, Keys logged, Documents in / out, Customer signed release](/screenshots/05-lane-1-private-walk-in-jobs/03-release-checklist.png)
 
 ## 5.11 Mark the job as done
 

@@ -15,14 +15,15 @@ To add or refresh a screenshot:
 - [x] `01-welcome-and-navigation/01-sign-in.png` — Rakkii Ops sign-in page (Email, Password, Sign in).
 - [x] `01-welcome-and-navigation/02-hub-switcher.png` — hub switcher open, showing Workshop, Sales, Finance, HR, Admin, Me.
 - [x] `01-welcome-and-navigation/03-branch-switcher.png` — Shop settings with the Shop picker (the top-bar shop switcher appears only when you own more than one shop).
+- [x] `01-welcome-and-navigation/04-job-history.png` — Job history with Done and Released · not done labels and the Progress column.
 
 ## 02-technician-daily-guide
 
 - [x] `02-technician-daily-guide/01-clock-in.png` — Time clock with Clock in and Today's punches.
 - [x] `02-technician-daily-guide/02-my-jobs.png` — My jobs with "Assigned to me" and "Other jobs".
-- [x] `02-technician-daily-guide/05-tech-job.png` — Technician view of a job: Work and Files tabs, next-step banner and Send to QC.
+- [x] `02-technician-daily-guide/05-tech-job.png` — Technician view of a job: status banner, steps bar, next-step banner, Send to QC, and the Work and Files tabs.
 - [x] `02-technician-daily-guide/03-bay-checklist.png` — Bay checklist with ticked and open steps.
-- [x] `02-technician-daily-guide/04-qc-photos.png` — QC photos card with Front, Rear, Left side (LS), Right side (RS) slots.
+- [x] `02-technician-daily-guide/04-qc-photos.png` — QC photos card on a phone: four ticked angle tiles, Show photos and Replace a photo.
 
 ## 03-staff-self-service-me-hub
 
@@ -38,11 +39,13 @@ To add or refresh a screenshot:
 
 - [x] `05-lane-1-private-walk-in-jobs/01-intake-checklist.png` — Vehicle intake checklist with car panel diagram.
 - [x] `05-lane-1-private-walk-in-jobs/04-new-job.png` — New job form with Customer, Vehicle and Work filled.
-- [x] `05-lane-1-private-walk-in-jobs/05-work-lines.png` — Work lines card with one labor line, Who pays, Qty, Cost and Sell.
+- [x] `05-lane-1-private-walk-in-jobs/05-work-lines.png` — Work lines card with labor and part lines, Who pays, Qty, Cost and Sell.
 - [x] `05-lane-1-private-walk-in-jobs/02-portal-approve.png` — Customer Portal pay page with Approve estimate / Decline estimate.
-- [x] `05-lane-1-private-walk-in-jobs/06-under-repair-qc-gate.png` — Job header after Start work: Under repair, Send to QC as the main button, Ready for pickup locked.
-- [x] `05-lane-1-private-walk-in-jobs/07-pay-money.png` — Pay tab Money card after the final payment: Customer owes PHP 0.00.
-- [x] `05-lane-1-private-walk-in-jobs/03-release-checklist.png` — Release tab with Keys logged, Documents in / out, Customer signed release.
+- [x] `05-lane-1-private-walk-in-jobs/06-under-repair-qc-gate.png` — Job header after Start work: Under repair banner, Step 3 of 7, Send to QC as the main button, Ready for pickup locked.
+- [x] `05-lane-1-private-walk-in-jobs/07-pay-money.png` — Pay tab Money card after the final payment (Customer owes PHP 0.00) and the Down payment card.
+- [x] `05-lane-1-private-walk-in-jobs/08-job-progress.png` — A released job: status banner, Not done yet list, steps opened with dates, Mark as done and tab marks.
+- [x] `05-lane-1-private-walk-in-jobs/09-more-papers.png` — More papers menu open in the Job order box.
+- [x] `05-lane-1-private-walk-in-jobs/03-release-checklist.png` — Release tab of a Ready job: QC photos, customer balance, Keys logged, Documents in / out, Customer signed release.
 
 ## 06-lane-2-insurance-claims-and-loa
 
@@ -66,8 +69,9 @@ To add or refresh a screenshot:
 
 ## 10-workshop-operations-board-calendar-backjobs-contractors
 
-- [x] `10-workshop-operations-board-calendar-backjobs-contractors/03-dashboard.png` — Owner Dashboard with Priority jobs suggestions, Announcements and today's tiles.
-- [x] `10-workshop-operations-board-calendar-backjobs-contractors/01-shop-board.png` — Shop board columns view with filters.
+- [x] `10-workshop-operations-board-calendar-backjobs-contractors/03-dashboard.png` — Owner Dashboard: Announcements, Priority jobs, Today's appointments and the five figures.
+- [x] `10-workshop-operations-board-calendar-backjobs-contractors/01-shop-board.png` — Shop board columns view with filters and What's left buttons.
+- [x] `10-workshop-operations-board-calendar-backjobs-contractors/04-whats-left.png` — What's left pop-up for a job under repair.
 - [x] `10-workshop-operations-board-calendar-backjobs-contractors/02-contractor-monitor.png` — Contractor jobs monitor with overdue filter.
 
 ## 11-hr-payroll-kiosk-announcements-documents

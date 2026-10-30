@@ -66,7 +66,7 @@ Under the plate a blue banner tells you what to do now:
 | Waiting for parts | "Mark parts in when they arrive." |
 | On hold | "On hold. Check with the desk before resuming work." |
 
-![Technician view of a job: Work and Files tabs, next-step banner and Send to QC](/screenshots/02-technician-daily-guide/05-tech-job.png)
+![Technician view of a job: status banner, steps bar, next-step banner, Send to QC, and the Work and Files tabs](/screenshots/02-technician-daily-guide/05-tech-job.png)
 
 ### Your status buttons
 A technician has only these moves. Everything else (start work, ready for pickup, release) belongs to the desk.
@@ -162,7 +162,7 @@ A car cannot move to **Ready for pickup** or be **Released** until it has the re
 
 Only the owner (or admin) can skip photos, with a written **QC override reason**.
 
-![QC photos card with Front, Rear, Left side (LS), Right side (RS) slots](/screenshots/02-technician-daily-guide/04-qc-photos.png)
+![QC photos card on a phone: four ticked angle tiles, Show photos and Replace a photo](/screenshots/02-technician-daily-guide/04-qc-photos.png)
 
 ## 2.9 Checking the calendar and forms
 
