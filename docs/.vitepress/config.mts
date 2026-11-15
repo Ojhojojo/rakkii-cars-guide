@@ -22,6 +22,7 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: 'Start here', link: '/start/getting-started' },
+      { text: 'Features', link: '/features' },
       {
         text: 'Your role',
         items: [
@@ -40,6 +41,7 @@ export default defineConfig({
         text: 'Start here',
         items: [
           { text: 'Getting started', link: '/start/getting-started' },
+          { text: 'Features by hub & menu', link: '/features' },
           { text: "What's new", link: '/whats-new' }
         ]
       },

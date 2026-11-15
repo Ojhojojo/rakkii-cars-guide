@@ -50,5 +50,5 @@ Practise on the integration app with made-up customers and plates only:
 - Customer Portal: `https://rakkii-web-int.web.app`
 
 ::: tip Can't find something?
-Use the search box at the top of this guide (press <kbd>/</kbd>), or look in [Reference](/reference/statuses) for the detailed rules.
+Use the search box at the top of this guide (press <kbd>/</kbd>), browse [Features by hub & menu](/features) for every Ops screen, or look in [Reference](/reference/statuses) for the detailed rules.
 :::
